@@ -1,0 +1,223 @@
+body{
+/*	background-color:#270B46;*/
+	background-color:rgb(81,113,158);
+/*	background-image:url(/img/08bleed_kobe_full.jpg);*/
+}
+
+@font-face{
+	font-family:"FridaySH";
+	src: url("/otf/Friday13SH.otf");
+}
+
+@font-face{
+    font-family:"HelveticaInserat-Roman";
+	src: url("/otf/HelveticaInserat-Roman.otf");
+}
+
+@font-face{
+    font-family:"Kberry";
+	src: url("/otf/kberry.ttf");
+}
+
+@font-face{
+    font-family:"Jester";
+	src: url("/otf/jester.ttf");
+}
+
+@font-face{
+    font-family:"AdineKirnberg-Script";
+	src: url("/otf/AdineKirnberg-Script.ttf");
+}
+
+#out_wrapper{
+	margin:0 auto;   /*708*/
+	width:878px;	
+}
+
+#blackgo{
+	float:left;
+	width:60px;
+	height:60px;
+	margin-top:500px;
+}
+#whitego{
+	float:left;
+	width:60px;
+	height:60px;
+	margin-left:20px;
+	margin-top:500px;
+}
+
+#chess{
+	width:60px;
+	height:60px;
+}
+
+#wrapper {
+	float:left;   /*708*/
+	margin-left:20px;
+	width:708px;
+}
+@font-face{
+	font-family:"FridaySH";
+	src: url("/otf/Friday13SH.otf");
+}
+
+
+#title{
+	color:#000000;
+	text-align:center;
+	font-family:HelveticaInserat-Roman,sans-serif;
+	font-size:90px;
+	-webkit-text-stroke:3px #648499;
+	text-shadow:#f4d12f 0 0 40px;
+}
+
+#intro{
+	text-align:center;
+	font-family:Jester,sans-serif;
+	color:white;
+	font-size:30px;
+}
+
+.foot{
+	clear:both;
+}
+
+
+#board{
+	width:708px;
+	height:708px;
+	background:url('/img/board.jpg');
+}
+
+.cell{
+	float:left;
+	margin-left:1px;
+	height:40px;
+	width:40px;
+	/*background-image: url(/img/black.png);*/
+}
+
+
+.cell.black{
+	background-image: url(/img/black.png);
+}
+.cell.white{
+	background-image: url(/img/white.png);
+}
+
+
+#row{
+	float:left;
+}
+
+#col1{
+	margin-left:8px;
+}
+
+#col2{
+	margin-left:6px;
+}
+
+#col3{
+	margin-left:6px;
+}
+
+#col4{
+	margin-left:6px;
+}
+
+#col5{
+	margin-left:8px;
+}
+
+
+#col6{
+	margin-left:7px;
+}
+
+
+
+#col7{
+	margin-left:6px;
+}
+
+
+#col8{
+	margin-left:6px;
+}
+
+#col9{
+	margin-left:8px;
+}
+
+
+#col10{
+	margin-left:6px;
+}
+
+
+#col11{
+	margin-left:6px;
+}
+
+
+#col12{
+	margin-left:7px;
+}
+
+
+#col13{
+	margin-left:6px;
+}
+
+#col14{
+	margin-left:7px;
+}
+
+#col15{
+	margin-left:8px;
+}
+
+#ui-dialog-title-dialog{
+	color:#818181;
+	font-size:14px;
+}
+
+
+
+#dialog{
+	background-color:#999999;
+
+}
+
+#win{
+	margin-top:40px;
+	font-size:40px;
+	color:rgb(130, 165, 112);
+	text-align:center;
+	font-family:HelveticaInserat-Roman,sans-serif;
+	-webkit-text-stroke:2px #648499;
+	-moz-text-stroke-color: #648499;
+	text-shadow:#f4d12f 0 0 40px;
+}
+
+
+#newGame{
+	font-size:55px;
+	font-weight:bold;
+	color:rgb(248, 104, 87);
+	text-align:center;
+	margin-bottom:30px;
+	font-family:Kberry,sans-serif;
+	-webkit-text-stroke:2px #648499;
+	text-shadow:rgb(0,158,225) 0 0 40px;
+	-webkit-transition:text-shadow 1s, color 1s;
+}
+
+#newGame:hover{
+	color:#000000;
+	text-shadow:rgb(119, 44, 184) 0 0 20px;	
+}
+

@@ -1,0 +1,387 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>home</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="xuchen81">
+	<!-- Date: 2010-07-13 -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/css/renju.css"> -->
+	<link rel="stylesheet" type="text/css" href="/css/a.css">
+	  <script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.ui.core.js"></script>
+
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.ui.mouse.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.ui.draggable.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.ui.position.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.ui.resizable.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.ui.dialog.js"></script>
+
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.effects.core.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.effects.blind.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui-1.8.4.custom/development-bundle/ui/jquery.effects.explode.js"></script>
+		<!-- <link type="text/css" href="/css/demos.css" rel="stylesheet" /> -->
+		<script type="text/javascript">
+		// increase the default animation speed to exaggerate the effect
+		$.fx.speeds._default = 1000;
+		$(function() {
+			$('#dialog').dialog({
+				autoOpen: false,
+				show: 'blind',
+				hide: 'explode'
+			});		
+		});
+		
+		function winMess(){
+			$('#dialog').dialog('open');
+			return false;
+		}
+		</script>
+		<script type="text/javascript" src="/js/renju.js"></script>
+	
+
+</head>
+<body onload ="init()">
+	<div class="gameoverinfo">
+
+	<div id="dialog" title="Congratulations !"> </div>
+	
+	</div>
+
+<div id = "out_wrapper"> 
+	<div id = "blackgo"> <img id = "chess" src = "/img/black.png"/> </div>
+
+<div id = "wrapper">
+	<div id = "title" class = "koko">Renju Room</div>
+	<div id = "intro" >This game requires two people to play. <br/ > Black goes first.</div>
+	<div id = "board" >
+		<div id = "row" class = "1" style = "margin-top: 8px;" >
+			<div id = "col1"  ></div>
+			<div id = "col2"  ></div>
+			<div id = "col3"  ></div>
+
+			<div id = "col4"  ></div>
+			<div id = "col5"  ></div>
+			<div id = "col6"  ></div>
+			<div id = "col7"  ></div>
+			<div id = "col8"  ></div>
+			<div id = "col9"  ></div>
+			<div id = "col10" ></div>
+			<div id = "col11"  ></div>
+			<div id = "col12"  ></div>
+
+			<div id = "col13"  ></div>
+			<div id = "col14"  ></div>
+			<div id = "col15" ></div>
+		</div>
+		
+		 <div id = "row" class = "2" style ="margin-top: 6px;" >
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+					
+				</div>
+				
+				
+				<div id = "row" class = "3" style ="margin-top: 7px;" >
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				<div id = "row" class = "4" style ="margin-top: 6px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+
+				</div>
+				
+				
+				<div id = "row" class = "5" style ="margin-top: 6px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+
+				
+				
+				<div id = "row" class = "6" style ="margin-top: 7px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				
+				<div id = "row" class = "7" style ="margin-top: 7px;">
+
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				<div id = "row" class = "8" style ="margin-top: 7px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				<div id = "row" class = "9" style ="margin-top: 6px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				<div id = "row" class = "10" style ="margin-top: 8px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				<div id = "row" class = "11" style ="margin-top: 6px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				<div id = "row" class = "12" style ="margin-top: 7px;" >
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+				
+				<div id = "row" class = "13" style ="margin-top: 6px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+
+				</div>
+				
+				<div id = "row" class = "14" style ="margin-top: 7px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+
+				
+				<div id = "row" class = "15" style ="margin-top: 7px;">
+					<div id = "col1"  ></div>
+					<div id = "col2"  ></div>
+					<div id = "col3"  ></div>
+
+					<div id = "col4"  ></div>
+					<div id = "col5"  ></div>
+					<div id = "col6"  ></div>
+					<div id = "col7"  ></div>
+					<div id = "col8"  ></div>
+					<div id = "col9"  ></div>
+					<div id = "col10" ></div>
+					<div id = "col11"  ></div>
+					<div id = "col12"  ></div>
+
+					<div id = "col13"  ></div>
+					<div id = "col14"  ></div>
+					<div id = "col15" ></div>
+				</div>
+
+	</div>
+	
+	
+	<!-- <button type="button" onclick = "saveGame()">Save Game</button>
+	<button type="button" onclick = "">test database</button>
+	<button type="button" onclick = "getSolution()">solution</button>
+	<button type="button" value="Start count!" onClick="doTimer()">start timer</button> -->
+	<!-- <div id = "timer" width = "200" height = "200"> 00 : 00 : 00 </div> -->
+	<div class = "foot"></div>
+</div>
+	<div id = "whitego"></div>
+<div class = "foot"></div>
+</div>
+
+
+
+</body>
+
+</html>
